@@ -231,6 +231,7 @@ polygon {
   display: none;
   flex-direction: column;
   justify-content: center;
+  gap: 15%;
 }
 
 .project-tile:hover .project-overlay {
@@ -254,7 +255,7 @@ polygon {
 }
 
 .project-buttons a {
-  margin: 0 20px;
+  margin: 0 10%;
   color: #fff;
 }
 
@@ -266,6 +267,7 @@ polygon {
   width: 100%;
   height: 140px;
   padding: 12px 5%;
+  cursor: pointer;
 }
 
 .section-footer:hover {
@@ -287,6 +289,7 @@ polygon {
 
 .section-footer img {
   border: var(--border);
+  height: 100px;
 }
 
 /* About Section */

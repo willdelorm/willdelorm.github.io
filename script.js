@@ -3,6 +3,16 @@ const toggleIcon = document.getElementById('toggle-icon')
 const projects = document.getElementById('projects')
 const about = document.getElementById('about')
 
+// Open In Progress Project in New Tab
+function openProject() {
+  window.open("https://github.com/willdelorm/climbing-app", "_blank");
+}
+
+// Open LinkedIn in New Tab
+function openLinkedIn() {
+  window.open("https://linkedin.com/in/willdelorm", "_blank");
+}
+
 // Switch Theme
 function switchTheme(e) {
   if (e.target.checked) {
