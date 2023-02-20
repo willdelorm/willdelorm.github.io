@@ -269,7 +269,7 @@ polygon {
 }
 
 .section-footer:hover {
-  background: var(--secondary-color);
+  background: var(--primary-variant);
   transition: 0.3s;
 }
 
