@@ -112,11 +112,7 @@
           </div>
         </div>
       </div>
-      <a
-        href="https://github.com/willdelorm/climbing-app"
-        target="_blank"
-        class="section-footer"
-      >
+      <div class="section-footer">
         <div>
           <div>
             <h3>In Progress</h3>
@@ -125,7 +121,7 @@
           <i class="fa-solid fa-chevron-right"></i>
         </div>
         <img src="https://picsum.photos/180/100" alt="" />
-      </a>
+      </div>
     </section>
     <!-- About Section -->
     <section id="about">
@@ -153,7 +149,7 @@
       </div>
       <div class="section-footer">
         <div>
-          <h3>Connect</h3>
+          <h3>Get connected</h3>
           <i class="fa-solid fa-chevron-right"></i>
         </div>
         <img src="https://picsum.photos/180/100" alt="" />
@@ -163,29 +159,25 @@
     <section id="contact">
       <h2>Contact Me</h2>
       <form id="contact-form" action="">
-        <div class="row">
-          <div class="col">
-            <label for="name">Name</label>
-            <input type="text" id="name" required />
-          </div>
-          <div class="col">
-            <label for="email">Email</label>
-            <input type="email" id="email" required />
-          </div>
+        <div class="form-container">
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
         </div>
-        <div class="row">
-          <div class="col">
-            <label for="message">Message</label>
-            <textarea id="message" cols="30" rows="10" required></textarea>
-          </div>
+        <div class="form-container">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
         </div>
-        <div class="row">
+        <div class="form-container">
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="button-group">
           <button type="submit">Submit</button>
         </div>
       </form>
     </section>
     <footer>
-      <span>Will Delorm © 2023</span>
+      <span>© 2023 Will Delorm</span>
       <div class="social-icons">
         <a href="https://github.com/willdelorm"
           ><i class="fa-brands fa-github"></i

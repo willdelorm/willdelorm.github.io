@@ -67,7 +67,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 60px;
   margin-bottom: 20px;
   text-align: center;
   z-index: 10;
@@ -237,8 +237,13 @@ polygon {
 
 .project-buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  font-size: 32px;
+}
+
+.project-buttons a {
+  margin: 0 20px;
 }
 
 /* Section Footer */
@@ -268,6 +273,10 @@ polygon {
   margin: 4px auto;
 }
 
+.section-footer img {
+  border: var(--border);
+}
+
 /* About Section */
 .about-text {
   flex: 1;
@@ -279,29 +288,64 @@ polygon {
   border-bottom: var(--border);
 }
 
+/* Contact Section */
 #contact h2 {
   border: none;
-  margin-bottom: 24px;
 }
 
-.row {
+form {
+  /* background: blue; */
+  width: 40%;
+  max-width: 500px;
+  margin: 24px;
+}
+
+.form-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin-bottom: 16px;
 }
 
-.col {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+form input,
+form textarea {
+  background: var(--on-background-alt);
+  border: none;
+  color: var(--background);
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-top: 4px;
+  outline: none;
+  padding: 8px;
+  resize: none;
 }
 
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: var(--background);
+  border: var(--border);
+  color: var(--on-background);
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 24px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+}
+
+/* Footer */
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 8px 24px;
   color: var(--on-background-alt)
+}
+
+.social-icons {
+  font-size: 28px;
 }
 
 .social-icons svg {
