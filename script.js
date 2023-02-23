@@ -1,5 +1,7 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const toggleIcon = document.getElementById("toggle-icon");
+const menuIcon = document.getElementById("menu-icon");
+const navMenu = document.getElementById("nav-menu");
 const heroImg = document.getElementById("hero");
 const projectsHeader = document.getElementById("projects");
 const images = Array.from(document.querySelectorAll("img"));
@@ -41,6 +43,11 @@ function switchTheme(e) {
   }
 }
 
+// Toggle Display of Menu on Mobile
+function toggleMenu() {
+  navMenu.style.display = navMenu.style.display === "none" ? "block" : "none";
+}
+
 // Event Listeners
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 500) {
@@ -57,6 +64,8 @@ window.addEventListener("scroll", () => {
 });
 
 toggleSwitch.addEventListener("change", switchTheme);
+
+menuIcon.addEventListener("click", toggleMenu);
 
 // Check localStorage for Theme
 const currentTheme = localStorage.getItem("theme");

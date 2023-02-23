@@ -96,9 +96,9 @@ Once downloaded, you may open the `index.html` file in your preferred browser or
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Add responsive styling for tablet/mobile devices
-- [ ] Add functionality to contact form
-- [ ] Add projects to site for demo access
+- [x] Add responsive styling for tablet/mobile devices
+- [ ] Add READMEs/photos to each project
+- [x] Include technologies used in project tiles
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
