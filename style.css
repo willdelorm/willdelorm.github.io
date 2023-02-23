@@ -232,7 +232,6 @@ input:checked + .slider::before {
   display: none;
   flex-direction: column;
   justify-content: center;
-  gap: 15%;
 }
 
 .project-tile:hover .project-overlay {
@@ -323,59 +322,34 @@ input:checked + .slider::before {
 
 /* Contact Section */
 #contact {
+  position: relative;
   transition: 0.4s;
 }
 
 #contact h2 {
   border: none;
+  font-size: 4rem;
+  margin-bottom: 96px;
+  line-height: 1;
+  letter-spacing: 5px;
+  text-align: left;
+  text-transform: none;
+
+  position: absolute;
+  left: 25%;
+  top: 20%;
 }
 
-form {
-  /* background: blue; */
-  width: 40%;
-  max-width: 500px;
-  margin: 24px;
+.email-container {
+  position: absolute;
+  right: 20%;
+  bottom: 25%;
 }
 
-.form-container {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
-}
-
-form input,
-form textarea {
-  background: var(--background);
-  border: var(--border);
-  color: var(--on-background-alt);
-  font-family: Lato, Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  margin-top: 4px;
-  outline: none;
-  padding: 8px;
-  resize: none;
-}
-
-.button-group {
-  display: flex;
-  justify-content: center;
-}
-
-button {
-  background: var(--background);
-  border: var(--border);
-  color: var(--on-background);
-  cursor: pointer;
-  font-family: Lato, Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin: 24px;
-  padding: 8px 20px;
-  text-transform: uppercase;
-}
-
-button:hover {
-  background: var(--primary-variant);
-  transition: 0.4s;
+.email-container svg {
+  transform: rotate(45deg);
+  margin-bottom: 40px;
+  margin-right: 28px;
 }
 
 /* Footer */
