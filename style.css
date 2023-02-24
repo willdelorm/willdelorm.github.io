@@ -250,6 +250,10 @@ input:checked + .slider::before {
   text-shadow: 0 2px 2px #000000;
 }
 
+.project-text h3 {
+  color: #ffffff;
+}
+
 .dev-icons {
   display: flex;
   gap: 16px;
