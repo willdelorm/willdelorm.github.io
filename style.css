@@ -247,7 +247,7 @@ input:checked + .slider::before {
 
 .project-text {
   text-align: center;
-  text-shadow: 0 2px 2px var(--background);
+  text-shadow: 0 2px 2px #000000;
 }
 
 .dev-icons {
@@ -349,7 +349,7 @@ input:checked + .slider::before {
 .btn {
   background: none;
   border: var(--border);
-  color: white;
+  color: var(--on-background);
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
