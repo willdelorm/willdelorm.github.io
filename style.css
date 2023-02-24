@@ -229,7 +229,7 @@ input:checked + .slider::before {
 
 .project-overlay {
   position: absolute;
-  background-color: rgb(0 0 0 / 50%);
+  background-color: rgb(0 0 0 / 60%);
   color: rgb(255 255 255);
   height: 100%;
   width: 100%;
@@ -248,6 +248,28 @@ input:checked + .slider::before {
 .project-text {
   text-align: center;
   text-shadow: 0 2px 2px var(--background);
+}
+
+.dev-icons {
+  display: flex;
+  gap: 16px;
+  font-size: 32px;
+}
+
+.fa-html5 {
+  color: #e65100;
+}
+
+.fa-css3-alt {
+  color: #039be5;
+}
+
+.fa-square-js {
+  color: #ffd600;
+}
+
+.fa-react {
+  color: #39c1d7;
 }
 
 .project-buttons {
