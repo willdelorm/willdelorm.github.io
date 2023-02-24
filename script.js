@@ -3,7 +3,7 @@ const toggleIcon = document.getElementById("toggle-icon");
 const menuIcon = document.getElementById("menu-icon");
 const navMenu = document.getElementById("nav-menu");
 const heroImg = document.getElementById("hero");
-const projectsHeader = document.getElementById("projects");
+const projects = document.getElementById("projects");
 const images = Array.from(document.querySelectorAll("img"));
 const about = document.getElementById("about");
 const contact = document.getElementById("contact");
@@ -50,13 +50,13 @@ function toggleMenu() {
 
 // Event Listeners
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 500) {
-    projectsHeader.children[0].style.backgroundColor = "var(--primary-variant)";
+  if (window.scrollY + window.innerHeight / 2 >= projects.offsetTop) {
+    projects.children[0].style.backgroundColor = "var(--primary-variant)";
   } else {
-    projectsHeader.children[0].style.backgroundColor = "var(--background)";
+    projects.children[0].style.backgroundColor = "var(--background)";
   }
 
-  if (window.scrollY >= 1700) {
+  if (window.scrollY + window.innerHeight / 2 >= about.offsetTop) {
     about.children[0].style.backgroundColor = "var(--primary-variant)";
   } else {
     about.children[0].style.backgroundColor = "var(--background)";
