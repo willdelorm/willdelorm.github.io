@@ -247,6 +247,7 @@ input:checked + .slider::before {
 
 .project-text {
   text-align: center;
+  text-shadow: 0 2px 2px var(--background);
 }
 
 .project-buttons {
@@ -335,7 +336,7 @@ input:checked + .slider::before {
   letter-spacing: 5px;
   text-align: left;
   text-transform: none;
-  width:auto;
+  width: auto;
 
   position: absolute;
   left: 25%;
@@ -420,7 +421,7 @@ footer {
     flex-direction: column;
   }
 
-  .project-overlay{
+  .project-overlay {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
