@@ -34,12 +34,10 @@ function switchTheme(e) {
     document.documentElement.setAttribute("data-theme", "light");
     toggleIcon.children[0].classList.replace("fa-moon", "fa-sun");
     switchImageTheme("secondary");
-    localStorage.setItem("theme", "light");
   } else {
     document.documentElement.setAttribute("data-theme", "");
     toggleIcon.children[0].classList.replace("fa-sun", "fa-moon");
     switchImageTheme("primary");
-    localStorage.setItem("theme", "dark");
   }
 }
 
@@ -66,13 +64,3 @@ window.addEventListener("scroll", () => {
 toggleSwitch.addEventListener("change", switchTheme);
 
 menuIcon.addEventListener("click", toggleMenu);
-
-// Check localStorage for Theme
-const currentTheme = localStorage.getItem("theme");
-if (currentTheme) {
-  document.documentElement.setAttribute("data-theme", currentTheme);
-
-  if (currentTheme === "light") {
-    toggleSwitch.checked = true;
-  }
-}
