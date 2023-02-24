@@ -68,7 +68,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](/#)
+[![Product Name Screen Shot][product-screenshot]](/assets/screenshot.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
