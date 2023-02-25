@@ -97,6 +97,7 @@ Once downloaded, you may open the `index.html` file in your preferred browser or
 - [x] Include technologies used in project tiles
 - [x] Add dev icons to projects
 - [x] Add resume to About section
+- [ ] Add max-width for wide monitors to keep content connected
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
