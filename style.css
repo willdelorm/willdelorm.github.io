@@ -256,8 +256,12 @@ input:checked + .slider::before {
 
 .dev-icons {
   display: flex;
-  gap: 16px;
+  justify-content: center;
   font-size: 32px;
+}
+
+.dev-icons svg {
+  padding: 8px;
 }
 
 .fa-html5 {
@@ -274,6 +278,10 @@ input:checked + .slider::before {
 
 .fa-react {
   color: #39c1d7;
+}
+
+.dev-icon {
+  max-width: 70px;
 }
 
 .project-buttons {
