@@ -10,7 +10,7 @@ const contact = document.getElementById("contact");
 
 // Open In Progress Project in New Tab
 function openProject() {
-  window.open("https://github.com/willdelorm/climbing-app", "_blank");
+  window.open("https://github.com/willdelorm/betabox", "_blank");
 }
 
 // Open LinkedIn in New Tab
