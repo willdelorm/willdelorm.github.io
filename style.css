@@ -224,7 +224,6 @@ input:checked + .slider::before {
 
 .project-tile img {
   width: 100%;
-  padding: 10%;
 }
 
 .project-overlay {
@@ -292,7 +291,7 @@ input:checked + .slider::before {
 }
 
 .project-buttons a {
-  margin: 0 10%;
+  margin: 0 20%;
   color: #fff;
 }
 
