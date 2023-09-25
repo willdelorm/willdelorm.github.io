@@ -52,7 +52,7 @@ h2,
 h3 {
   color: var(--on-background);
   font-weight: normal;
-  text-transform: uppercase;
+  
 }
 
 h1 {
@@ -68,10 +68,12 @@ h2 {
   text-align: center;
   transition: 0.4s;
   width: 100%;
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: 24px;
+  text-transform: uppercase;
 }
 
 a {
@@ -193,6 +195,10 @@ input:checked + .slider::before {
   max-width: 80%;
   fill: none;
   stroke: #eee;
+}
+
+.title-container p {
+  font-size: 48px;
 }
 
 /* Projects Section */
