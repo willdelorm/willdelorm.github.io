@@ -219,7 +219,10 @@ input:checked + .slider::before {
 }
 
 .project-tile {
+  background-size: cover;
+  background-position: top center;
   border: var(--border);
+  width: 30vw;
   max-width: 500px;
   aspect-ratio: 1 / 1;
   display: flex;
@@ -238,16 +241,12 @@ input:checked + .slider::before {
   color: rgb(255 255 255);
   height: 100%;
   width: 100%;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5%;
   gap: 20px;
-}
-
-.project-tile:hover .project-overlay {
-  display: flex;
 }
 
 .project-text {
