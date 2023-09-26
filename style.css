@@ -98,7 +98,7 @@ nav {
 .navbar {
   background: var(--background);
   border-bottom: var(--border);
-  padding: 12px 24px;
+  padding: 6px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,6 +123,9 @@ nav {
 .nav-menu a {
   display: block;
   margin-bottom: 12px;
+}
+
+.logo {
 }
 
 /* Dark Mode Switch */
