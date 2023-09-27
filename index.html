@@ -8,143 +8,64 @@
       name="description"
       content="frontend web developer focused on meeting your needs"
     />
-    <title>Will Delorm - Web Developer</title>
+    <title>Will Delorm | Frontend Developer</title>
     <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style-reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <!-- Navigation -->
-    <nav id="nav">
-      <div class="navbar">
-        <img src="public/img/logo-initials.svg" alt="logo" width="50px" />
-        <!-- Dark Mode Switch -->
-        <div class="theme-switch-wrapper">
-          <div id="toggle-icon">
-            <i class="fa-solid fa-moon"></i>
-          </div>
-          <label class="theme-switch">
-            <input type="checkbox" />
-            <div class="slider round"></div>
-          </label>
+    <nav class="flex border">
+      <img
+        src="public/img/logo-initials-primary.svg"
+        alt="logo"
+        class="nav__logo"
+      />
+      <!-- Dark Mode Switch -->
+      <div class="theme-switch-wrapper flex">
+        <div id="toggle-icon">
+          <i class="fa-solid fa-moon"></i>
         </div>
-        <div id="menu-icon" class="menu-icon">
-          <i class="fa-solid fa-bars"></i>
-        </div>
+        <label class="theme-switch">
+          <input type="checkbox" class="hidden" />
+          <div class="slider"></div>
+        </label>
       </div>
+      <!-- Mobile Menu Icon -->
+      <div id="menu-icon" class="menu-icon hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!-- Mobile Menu -->
       <div id="nav-menu" class="nav-menu">
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
-    <!-- Home Section -->
-    <section id="home">
-      <div class="title-container">
+    <!-- Splash Section -->
+    <section id="splash" class="splash flex-column border">
+      <div class="splash__text center">
         <h1>Frontend Developer</h1>
         <p>I code websites with a creative eye.</p>
-        <img id="hero" src="public/img/tattoo-logo-primary.svg" alt="" />
       </div>
-    </section>
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <div class="projects-container">
-        <div class="projects-row">
-          <!-- DesignationDK -->
-          <div
-            class="project-tile"
-            style="background-image: url(public/img/screenshot-designation.png)"
-          >
-            <div class="project-overlay">
-              <div class="project-text">
-                <h3>DesignationDK</h3>
-                <p>Landing page for a small architecture firm</p>
-              </div>
-              <div class="project-buttons">
-                <a href="https://github.com/willdelorm/keeper"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <!-- Shannon Gaul -->
-          <div
-            class="project-tile"
-            style="background-image: url(public/img/screenshot-shannon.png)"
-          >
-            <div class="project-overlay">
-              <div class="project-text">
-                <h3>Shannon Gaul</h3>
-                <p>Website for personal wellness practitioner</p>
-              </div>
-              <div class="project-buttons">
-                <a href="https://github.com/willdelorm/crwn-clothing"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="projects-row">
-          <!-- Crwn Clothing -->
-          <div
-            class="project-tile"
-            style="background-image: url(public/img/screenshot-crwn.png)"
-          >
-            <div class="project-overlay">
-              <div class="project-text">
-                <h3>Crwn Clothing</h3>
-                <p>Ecommerce platform for a fictional brand</p>
-              </div>
-              <div class="project-buttons">
-                <a href="https://github.com/willdelorm/keeper"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <!-- Predict Your Depiction -->
-          <div
-            class="project-tile"
-            style="background-image: url(public/img/screenshot-predict.png)"
-          >
-            <div class="project-overlay">
-              <div class="project-text">
-                <h3>Predict Your Depiction</h3>
-                <p>Facial recognition app using the Clarifai API</p>
-              </div>
-              <div class="project-buttons">
-                <a href="https://github.com/willdelorm/to-do/" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://willdelorm.github.io/to-do/" target="_blank"
-                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section-footer" onclick="openProject()">
-        <div>
-          <div>
-            <h3>In Progress</h3>
-            <p>BetaBox | React | GitHub</p>
-          </div>
-          <i class="fa-solid fa-chevron-right"></i>
-        </div>
-        <img src="public/img/undraw-in-progress-primary.svg" alt="" />
-      </div>
+      <img
+        id="hero"
+        class="splash__img"
+        src="public/img/tattoo-logo-primary.svg"
+        alt=""
+      />
     </section>
     <!-- About Section -->
-    <section id="about">
-      <h2>About</h2>
-      <div class="about-container">
-        <div class="about-text">
+    <section id="about" class="flex-column">
+      <h2 class="center border">About Me</h2>
+      <div class="about__text flex-column border">
+        <!-- <div class="about-text"> -->
+        <h3>Hi, I'm Will!</h3>
+        <div>
           <p>
-            Hi, I'm Will! I'm a frontend developer specializing in JavaScript
-            (ES6, React) with a solid understanding of the MERN stack.
+            I'm a frontend developer specializing in JavaScript (ES6, React)
+            with a solid understanding of the MERN stack.
           </p>
           <p>
             For the past decade, I've developed strong communication and
@@ -160,29 +81,160 @@
           </p>
         </div>
         <a href="./public/resume-will-delorm.pdf" target="_blank">
-          <button class="btn"><i class="fa fa-download"></i> Resume</button>
+          <button type="button"><i class="fa fa-download"></i> Resume</button>
         </a>
       </div>
-      <div class="section-footer" onclick="openLinkedIn()">
-        <div>
-          <div>
-            <h3>Get connected</h3>
-            <p>LinkedIn</p>
+      <div class="skills flex border">
+        <div class="center">
+          <h3>Languages</h3>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+        </div>
+        <div class="center">
+          <h3>Tools</h3>
+          <p>React</p>
+          <p>Bootstrap</p>
+          <p>Github</p>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects border">
+      <h2 class="center border">Featured Projects</h2>
+      <div class="projects__grid border">
+        <!-- DesignationDK -->
+        <div
+          class="projects__tile"
+          style="background-image: url(public/img/tiles/tile-designation.png)"
+        >
+          <h3>DesignationDK</h3>
+          <div class="projects__overlay hidden center">
+            <div class="project-text">
+              <p>Architecture firm designing with beauty and grace</p>
+            </div>
+            <a href="https://designationdk.com" target="_blank">
+              <button type="button">
+                View website
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </a>
           </div>
+        </div>
+        <!-- Shannon Gaul -->
+        <div
+          class="projects__tile"
+          style="background-image: url(public/img/tiles/tile-shannon.png)"
+        >
+          <h3>Shannon Gaul</h3>
+          <div class="projects__overlay hidden center">
+            <div class="project-text">
+              <p>
+                Personal wellness practitioner healing the mind, body and spirit
+              </p>
+            </div>
+            <a href="https://shannongaul.com" target="_blank">
+              <button type="button">
+                View website
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- Crwn Clothing -->
+        <div
+          class="projects__tile"
+          style="background-image: url(public/img/tiles/tile-crwn.png)"
+        >
+          <h3>Crwn Clothing</h3>
+          <div class="projects__overlay hidden center">
+            <div class="project-text">
+              <p>Ecommerce project for a fictional clothing brand</p>
+            </div>
+            <a
+              href="https://github.com/willdelorm/crwn-clothing"
+              target="_blank"
+            >
+              <button type="button">
+                View code
+                <i class="fa-brands fa-github"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- Predict Your Depiction -->
+        <div
+          class="projects__tile"
+          style="background-image: url(public/img/tiles/tile-predict.png)"
+        >
+          <h3>Predict Your Depiction</h3>
+          <div class="projects__overlay hidden center">
+            <div class="project-text">
+              <p>Facial recognition project using Clarifai API</p>
+            </div>
+            <a
+              href="https://github.com/willdelorm/predict-your-depiction"
+              target="_blank"
+            >
+              <button type="button">
+                View code
+                <i class="fa-brands fa-github"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- QueerEugene -->
+        <div
+          class="projects__tile"
+          style="background-image: url(public/img/tiles/tile-queereugene.png)"
+        >
+          <h3>Queer Eugene</h3>
+          <div class="projects__overlay hidden center">
+            <div class="project-text">
+              <p>
+                Non-profit organization providing LGBTQIA+ resources and
+                community
+              </p>
+            </div>
+            <a href="https://queereugene.org" target="_blank">
+              <button type="button">
+                View website
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Github Callout -->
+      <div class="projects__footer flex border" onClick="openGithub()">
+        <div>
+          <h3>See more on Github</h3>
           <i class="fa-solid fa-chevron-right"></i>
         </div>
-        <img src="public/img/undraw-connect-primary.svg" alt="" />
+        <img src="public/img/undraw_developer_activity.svg" alt="" />
       </div>
     </section>
+
     <!-- Contact Section -->
     <section id="contact">
-      <h2>Let's<br />get<br />to work!</h2>
-      <div class="email-container">
-        <i class="fa-solid fa-chevron-right"></i>
-        <a href="mailto:willdelorm@gmail.com">willdelorm@gmail.com</a>
+      <h2 class="center border">Contact Me</h2>
+      <div class="contact__body flex border">
+        <div class="contact__text">
+          <h3>Get in touch</h3>
+          <p>
+            Interested in working together? Let's chat!<br />We can pick each
+            other's brain.
+          </p>
+        </div>
+        <a href="mailto:willdelorm@gmail.com">
+          <button type="button">Reach out</button>
+        </a>
       </div>
     </section>
-    <footer>
+
+    <!-- Footer -->
+    <footer class="flex-column center">
+      <img src="public/img/logo-primary.svg" alt="logo" />
       <div class="social-icons">
         <a href="https://github.com/willdelorm"
           ><i class="fa-brands fa-github"></i
@@ -190,14 +242,11 @@
         <a href="https://www.linkedin.com/in/willdelorm/"
           ><i class="fa-brands fa-linkedin-in"></i
         ></a>
-        <a rel="me" href="https://tech.lgbt/@willdelorm"
-          ><i class="fa-brands fa-mastodon"></i
-        ></a>
         <a href="mailto:willdelorm@gmail.com"
           ><i class="fa-regular fa-envelope"></i
         ></a>
       </div>
-      <span>© Will Delorm</span>
+      <p>Designed and built by me © 2023</p>
     </footer>
     <!-- Font Awesome Script -->
     <script
