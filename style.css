@@ -61,6 +61,7 @@ h3 {
 }
 
 p {
+  line-height: 1.2;
   margin-bottom: 20px;
 }
 
@@ -134,7 +135,7 @@ nav {
 }
 
 input:checked + .slider {
-  background: var(--accent);
+  background: var(--on-accent);
 }
 
 input:checked + .slider::before {
@@ -287,9 +288,14 @@ footer img {
   --border: 1px solid var(--on-background);
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 992px) {
   body {
     font-size: 16px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
   }
 
   h1 {
@@ -308,7 +314,36 @@ footer img {
     padding: 12px 24px;
   }
 
+  .splash__text p {
+    font-size: 24px;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .about__text {
+    padding: 96px 12%;
+  }
+
   .projects__grid {
     grid-template-columns: 1fr;
+    padding: 96px 48px;
+  }
+
+  .projects__footer {
+    padding: 24px;
+  }
+
+  .projects__footer img {
+    max-height: 75px;
+  }
+
+  .contact__body {
+    flex-direction: column;
+    padding: 96px 10%;
+    gap: 24px;
   }
 }
