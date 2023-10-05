@@ -19,7 +19,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/willdelorm/willdelorm.github.io">
-    <img src="assets/img/tattoo-logo-primary.svg" alt="Logo" width="80" height="80">
+    <img src="public/img/tattoo-logo-primary.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">My GitPages Site</h3>
@@ -42,35 +42,14 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#built-with">Built With</a></li>  
+    <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](/assets/screenshot.png)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
@@ -88,35 +67,6 @@ Once downloaded, you may open the `index.html` file in your preferred browser or
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [x] Add responsive styling for tablet/mobile devices
-- [ ] Add READMEs/photos to each project
-- [x] Include technologies used in project tiles
-- [x] Add dev icons to projects
-- [x] Add resume to About section
-- [ ] Add max-width for wide monitors to keep content connected
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
@@ -161,4 +111,3 @@ Project Link: [https://github.com/willdelorm/willdelorm.github.io](https://githu
 [license-url]: https://github.com/willdelorm/willdelorm.github.io/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/willdelorm
-[product-screenshot]: assets/screenshot.png
