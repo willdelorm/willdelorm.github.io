@@ -1,6 +1,5 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
 const toggleIcon = document.getElementById("toggle-icon");
-const menuIcon = document.getElementById("menu-icon");
 const navMenu = document.getElementById("nav-menu");
 const images = Array.from(document.querySelectorAll("img"));
 
@@ -32,11 +31,5 @@ function openGithub() {
   window.open("https://github.com/willdelorm", "_blank");
 }
 
-// Toggle Display of Menu on Mobile
-function toggleMenu() {
-  navMenu.style.display = navMenu.style.display === "none" ? "block" : "none";
-}
-
 // Event Listeners
 toggleSwitch.addEventListener("change", switchTheme);
-menuIcon.addEventListener("click", toggleMenu);

@@ -14,38 +14,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body class="body">
     <!-- Navigation -->
-    <nav class="flex border">
+    <nav class="nav">
       <img
         src="public/img/logo-initials-primary.svg"
         alt="logo"
         class="nav__logo"
       />
       <!-- Dark Mode Switch -->
-      <div class="theme-switch-wrapper flex">
+      <div class="nav__toggler">
         <div id="toggle-icon">
           <i class="fa-solid fa-moon"></i>
         </div>
-        <label class="theme-switch">
-          <input type="checkbox" class="hidden" />
-          <div class="slider"></div>
+        <label class="nav__switch">
+          <input type="checkbox" class="nav_hidden" />
+          <div class="nav__slider"></div>
         </label>
       </div>
-      <!-- Mobile Menu Icon -->
-      <div id="menu-icon" class="menu-icon hidden">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <!-- Mobile Menu -->
-      <div id="nav-menu" class="nav-menu">
+      <!-- Menu -->
+      <div id="nav-menu" class="nav__menu">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
     <!-- Splash Section -->
-    <section id="splash" class="splash flex-column border">
-      <div class="splash__text center">
+    <section id="splash" class="splash">
+      <div class="splash__text">
         <h1>Frontend Developer</h1>
         <p>I code websites with a creative eye.</p>
       </div>
