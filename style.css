@@ -11,9 +11,9 @@
 }
 
 [data-theme="light"] {
-  --background: #ffffff;
+  --background: #f6f4f0;
   --accent: #02d5e0;
-  --on-background: #222831;
+  --on-background: #2e5077;
   --border: 1px solid var(--on-background);
 }
 
@@ -248,7 +248,7 @@ p {
 
 .projects__tile:hover > .projects__overlay {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 0 32px;
+  padding: 0 48px;
   position: absolute;
   top: 0;
   left: 0;
