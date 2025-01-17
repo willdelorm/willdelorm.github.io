@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --clr-accent: #149ddd;
+
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a:hover {
+  color: var(--clr-accent);
+}
+
+.menuIcon {
+  background-color: var(--clr-accent);
+  color: white;
+}
