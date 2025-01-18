@@ -23,3 +23,7 @@ a:hover {
   background-color: var(--clr-accent);
   color: white;
 }
+
+hr {
+  border-color: var(--clr-accent);
+}
