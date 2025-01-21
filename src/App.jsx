@@ -3,6 +3,7 @@ import About from "./components/About";
 import { List } from "@phosphor-icons/react";
 import "./App.css";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <main className="w-full min-h-screen flex-1">
         <About />
         <Skills />
+        <Projects />
       </main>
     </div>
   );
