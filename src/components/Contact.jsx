@@ -4,16 +4,13 @@ function Projects() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => console.log(data);
 
-  console.log(watch("example")); // watch input value by passing the name of it
-
   return (
-    <section id="skills" className="relative w-full px-10 py-32">
+    <section id="contact" className="relative w-full px-10 py-32">
       <div className="mb-10 space-y-10">
         <div className="space-y-3">
           <h2 className="text-4xl font-medium">Contact</h2>

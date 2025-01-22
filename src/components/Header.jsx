@@ -6,7 +6,7 @@ import {
   PaperPlaneTilt,
 } from "@phosphor-icons/react";
 
-function Header() {
+function Header({ handleClick }) {
   const navItems = [
     {
       title: "About",
@@ -17,8 +17,8 @@ function Header() {
       url: "#skills",
     },
     {
-      title: "Portfolio",
-      url: "#portfolio",
+      title: "Projects",
+      url: "#projects",
     },
     {
       title: "Contact",
@@ -42,7 +42,7 @@ function Header() {
   ];
 
   return (
-    <header className="hidden xl:block w-[300px] min-h-screen px-4 py-6 bg-gray-800 text-gray-100">
+    <header className="-left-full xl:left-0 fixed w-[300px] h-screen px-4 py-6 bg-gray-800 text-gray-100 z-10">
       <img
         src="https://picsum.photos/150"
         alt="profile image"
@@ -53,7 +53,15 @@ function Header() {
       <ul className="text-xl mx-6 mb-8">
         {navItems.map(({ title, url }, index) => (
           <li key={index} className="mb-3">
-            <a href={url} className="flex items-center space-x-4">
+            <a
+              href={url}
+              className="flex items-center space-x-4"
+              onClick={() => {
+                if (window.innerWidth < 1280) {
+                  handleClick();
+                }
+              }}
+            >
               <CaretCircleDoubleRight size={24} />
               <span>{title}</span>
             </a>

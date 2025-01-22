@@ -24,7 +24,7 @@ function Projects() {
 
   return (
     <section
-      id="skills"
+      id="projects"
       className="relative w-full px-10 py-32 flex justify-between items-center space-x-10"
     >
       <div className="mb-10 flex-1 space-y-10">
