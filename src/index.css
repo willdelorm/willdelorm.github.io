@@ -20,6 +20,10 @@ a:hover {
   color: var(--clr-accent);
 }
 
+button {
+  background: var(--clr-accent);
+}
+
 .menuIcon {
   background-color: var(--clr-accent);
   color: white;
