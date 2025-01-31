@@ -1,43 +1,18 @@
 import { CaretRight } from "@phosphor-icons/react";
 
+const aboutText = `Hi, I’m Will! I’m a frontend developer passionate about crafting beautiful, responsive websites that bring people’s ideas to life. I thrive on building digital spaces that reflect the passions of my clients.
+Currently, I’m freelancing with local businesses to establish their online presence and expand their reach. Most recently, I designed and built a new site for Queer Eugene. On the side, I’m diving into Python and AI development to broaden my skill set.
+Before web development, I designed lighting for performances, creating immersive atmospheres for audiences and artists. Later, I taught rock climbing, breaking down complex systems into simple, actionable steps. These experiences sharpened my eye for detail and my ability to communicate effectively with diverse teams.
+When I’m not building sleek user interfaces, you’ll find me climbing, hiking, or lost in a good book. Lately, I’ve been channeling my inner Magneto to save the multiverse.
+📬 Let’s connect! If you need a dynamic, detail-oriented developer, I’d love to collaborate.`
+
 function About() {
   return (
     <section id="about" className="w-full px-10 py-32 max-w-[1200px]">
       <div className="mb-10 space-y-3">
         <h2 className="text-4xl font-medium">About</h2>
         <hr className="w-16 border-0 border-t-2" />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
-          tempore, consequuntur nam unde maiores exercitationem eius rem ex
-          doloribus officiis nisi? Corrupti cupiditate nobis fuga ea voluptatum?
-          Officiis, totam laudantium.
-        </p>
-      </div>
-      <div className="px-3 space-y-3">
-        <h3 className="text-2xl font-medium">Web Developer</h3>
-        <p className="">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        </p>
-        <ul className="px-6">
-          <li className="mb-4 flex items-center space-x-3">
-            <CaretRight size={24} />
-            <p>Phone: 973-634-4619</p>
-          </li>
-          <li className="mb-4 flex items-center space-x-3">
-            <CaretRight size={24} />
-            <p>Email: willdelorm@gmail.com</p>
-          </li>
-          <li className="mb-4 flex items-center space-x-3">
-            <CaretRight size={24} />
-            <p>Location: Eugene, OR</p>
-          </li>
-        </ul>
-        <p className="">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestiae
-          blanditiis iure nisi perspiciatis temporibus voluptatum nulla
-          laboriosam earum. Natus non corporis reiciendis vitae omnis doloremque
-          dolorum, ipsum exercitationem assumenda?
-        </p>
+        {aboutText.split("\n").map((text, index) => (<p key={index}>{text}</p>))}
       </div>
     </section>
   );
