@@ -13,10 +13,6 @@ function Header({ handleClick }) {
       url: "#about",
     },
     {
-      title: "Skills",
-      url: "#skills",
-    },
-    {
       title: "Projects",
       url: "#projects",
     },
