@@ -1,24 +1,41 @@
-import { CaretRight } from "@phosphor-icons/react";
+import queerEugene from "../assets/queereugene.png";
+import designationDK from "../assets/designationDK.png";
+import betabox from "../assets/betabox.png";
+import clearscore from "../assets/clearscore.png";
 
 function Projects() {
   const projects = [
     {
-      title: "project 1",
+      title: "Queer Eugene",
+      link: "https://queereugene.com",
+      image: queerEugene,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ut magni voluptatibus possimus architecto adipisci expedita veritatis quasi et animi aspernatur, maxime mollitia saepe corporis ad rem inventore doloremque labore?",
-      devItems: ["tech1", "tech3", "tech4"],
+        "Non-profit LGBTQ+ organization in Eugene, Oregon. I was responsible for the front-end design and development of the website. The website was built using Next.js and Tailwind CSS.",
+      devItems: ["React", "TailwindCSS", "Firebase", "Shadcn", "Next.js"],
     },
     {
-      title: "project 2",
+      title: "DesignationDK",
+      link: "https://designationdk.com",
+      image: designationDK,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ut magni voluptatibus possimus architecto adipisci expedita veritatis quasi et animi aspernatur, maxime mollitia saepe corporis ad rem inventore doloremque labore?",
-      devItems: ["tech1", "tech3", "tech4"],
+        "Small architecture firm in New York City. I built their landing page using SquareSpace and custom CSS.",
+      devItems: ["SquareSpace", "CSS"],
     },
     {
-      title: "project 3",
+      title: "BetaBox",
+      link: "https://github.com/willdelorm/betabox",
+      image: betabox,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ut magni voluptatibus possimus architecto adipisci expedita veritatis quasi et animi aspernatur, maxime mollitia saepe corporis ad rem inventore doloremque labore?",
-      devItems: ["tech1", "tech3", "tech4"],
+        "Climbing tracker web app that allows users to log their climbing sessions and track their progress. This personal project was built using React and Bootstrap.",
+      devItems: ["React", "Bootstrap", "Vite"],
+    },
+    {
+      title: "ClearScore",
+      link: "https://github.com/willdelorm/clearscore",
+      image: clearscore,
+      description:
+        "Frontend Technical Assessment: Ideas board to create, update and delete ideas.",
+      devItems: ["React", "TypeScript", "Vite"],
     },
   ];
 
@@ -28,34 +45,28 @@ function Projects() {
       className="relative w-full px-10 py-32 flex justify-between items-center space-x-10"
     >
       <div className="mb-10 flex-1 space-y-10">
-        <div className="space-y-3">
+        <div className="space-y-3 mb-20">
           <h2 className="text-4xl font-medium">Projects</h2>
           <hr className="w-16 border-0 border-t-2" />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
-            eligendi aspernatur expedita dolore, cupiditate in at quisquam
-            recusandae, ducimus maiores minima quibusdam amet delectus odit
-            similique exercitationem qui? Rem, magni.
-          </p>
         </div>
-        <div className="px-[120px] space-y-12">
-          {projects.map((project) => (
-            <div className="flex">
-              <div className="max-w-[300px] mr-6">
-                <img src="https://picsum.photos/300/200" alt="profile image" />
+        <div className="px-[120px] space-y-16">
+          {projects.map((project, idx) => (
+            <a key={idx} href={project.link} className="flex">
+              <div className="mr-6">
+                <img src={project.image} className="w-[300px]" alt="profile image" />
               </div>
-              <div className="space-y-3">
+              <div className="flex-1 space-y-3">
                 <h3 className="text-xl medium">{project.title}</h3>
                 <p>{project.description}</p>
-                <div className="px-6 flex space-x-3">
+                <div className="flex space-x-3">
                   {project.devItems.map((item) => (
-                    <div className="bg-gray-200 px-3 py-1 rounded-lg">
+                    <div key={item} className="bg-gray-200 px-3 py-1 rounded-lg">
                       {item}
                     </div>
                   ))}
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

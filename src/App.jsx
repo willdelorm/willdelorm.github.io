@@ -2,7 +2,6 @@ import { useState } from "react";
 import { List } from "@phosphor-icons/react";
 import Header from "./components/Header";
 import About from "./components/About";
-import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -29,7 +28,6 @@ function App() {
       <Header handleClick={handleClick} />
       <main className="w-full min-h-screen xl:ml-[300px] flex-1">
         <About />
-        <Skills />
         <Projects />
         <Contact />
         <Footer />
