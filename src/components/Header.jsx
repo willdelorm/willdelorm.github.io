@@ -5,6 +5,7 @@ import {
   LinkedinLogo,
   PaperPlaneTilt,
 } from "@phosphor-icons/react";
+import ProfileImage from "../assets/profile.jpg";
 
 function Header({ handleClick }) {
   const navItems = [
@@ -40,9 +41,9 @@ function Header({ handleClick }) {
   return (
     <header className="-left-full xl:left-0 fixed w-[300px] h-screen px-4 py-6 bg-gray-800 text-gray-100 z-10">
       <img
-        src="https://picsum.photos/150"
+        src={ProfileImage}
         alt="profile image"
-        className="mx-auto mb-6 border-8 border-white/25 rounded-full"
+        className="w-[200px] mx-auto mb-6 border-8 border-white/25 rounded-full"
       />
       <h1 className="text-5xl font-medium text-center mb-4">Will Delorm</h1>
       <h2 className="text-center mb-8">Your friendly neighborhood developer</h2>
