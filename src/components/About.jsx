@@ -8,7 +8,7 @@ When I’m not building sleek user interfaces, you’ll find me climbing, hiking
 
 function About() {
   return (
-    <section id="about" className="w-full px-10 py-32 max-w-[1200px]">
+    <section id="about" className="w-full px-10 py-32">
       <div className="mb-10 space-y-3">
         <h2 className="text-4xl font-medium">About</h2>
         <hr className="w-16 border-0 border-t-2" />
