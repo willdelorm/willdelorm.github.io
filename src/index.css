@@ -33,6 +33,6 @@ hr {
   border-color: var(--clr-accent);
 }
 
-main > section:nth-child(even) {
+main > *:nth-child(even) {
   background: var(--clr-accent-lt);
 }

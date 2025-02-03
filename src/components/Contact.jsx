@@ -11,69 +11,79 @@ function Projects() {
 
   return (
     <section id="contact" className="relative w-full px-10 py-32">
-      <div className="mb-10 space-y-10">
+      <div className="mb-10 space-y-20">
         <div className="space-y-3">
           <h2 className="text-4xl font-medium">Contact</h2>
           <hr className="w-16 border-0 border-t-2" />
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <p>
+            Whether you're interested in coffee or a new project, I'd love to
+            hear from you!
+          </p>
+          <p className="text-sm italic">* indicates required field</p>
         </div>
-        <div className="max-w-[1200px] px-[96px] mx-auto space-y-6">
-          <div className="flex">
-            <div className="flex-1">
-              <h3 className="text-xl font-medium">Call Me</h3>
-              <a href="tel:+19736344619">973 634 4619</a>
-            </div>
-            <div className="flex-1">
-              <h3 className="text-xl font-medium">Email Me</h3>
-              <a href="mailto:willdelorm@gmail.com">willdelorm@gmail.com</a>
-            </div>
-          </div>
-
+        <div className="max-w-[1200px] px-[96px] mx-auto">
           <form
-            className="p-6 space-y-4 bg-white flex flex-col"
+            className="p-8 space-y-6 flex flex-col shadow-md rounded-lg"
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="flex space-x-4">
               <div className="flex-1">
-                <label className="block font-medium mb-2" htmlFor="name">
-                  Name
+                <label className="block font-medium mb-1" htmlFor="name">
+                  Name*{" "}
+                  {errors.name?.type === "required" && (
+                    <span className="text-red-500">Required</span>
+                  )}
                 </label>
                 <input
                   className="w-full border border-black px-2 py-1"
                   placeholder="e.g. Jane Doe"
-                  {...register("name")}
+                  {...register("name", { required: true })}
+                  aria-invalid={errors.name ? "true" : "false"}
+                  maxLength={50}
                 />
               </div>
               <div className="flex-1">
-                <label className="block font-medium mb-2" htmlFor="email">
-                  Email
+                <label className="block font-medium mb-1" htmlFor="email">
+                  Email*{" "}
+                  {errors.email?.type === "required" && (
+                    <span className="text-red-500">Required</span>
+                  )}
                 </label>
                 <input
                   className="w-full border border-black px-2 py-1"
                   placeholder="e.g. jane.doe@gmail.com"
-                  {...register("email")}
+                  {...register("email", { required: true })}
+                  aria-invalid={errors.email ? "true" : "false"}
+                  maxLength={320}
                 />
               </div>
             </div>
             <div>
-              <label className="block font-medium mb-2" htmlFor="subject">
+              <label className="block font-medium mb-1" htmlFor="subject">
                 Subject
               </label>
               <input
                 className="w-full border border-black px-2 py-1"
                 placeholder="e.g. Looking for a web developer"
                 {...register("subject")}
+                aria-invalid={errors.subject ? "true" : "false"}
+                maxLength={100}
               />
             </div>
             <div>
-              <label className="block font-medium mb-2" htmlFor="message">
-                Message
+              <label className="block font-medium mb-1" htmlFor="message">
+                Message*{" "}
+                {errors.message?.type === "required" && (
+                  <span className="text-red-500">Required</span>
+                )}
               </label>
               <textarea
                 className="w-full border border-black px-2 py-1 resize-none"
                 rows="5"
-                placeholder="e.g. Help!"
-                {...register("message")}
+                placeholder="e.g. You're just the person I've been looking for!"
+                {...register("message", { required: true })}
+                aria-invalid={errors.message ? "true" : "false"}
+                maxLength={2000}
               />
             </div>
             <button
