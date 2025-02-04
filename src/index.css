@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --clr-accent: #149ddd;
-  --clr-accent-lt: #f4fafd;
+  --clr-accent: #3cccda;
 
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 14px;
@@ -49,6 +48,10 @@ h3 {
 
 hr {
   border-color: var(--clr-accent);
+}
+
+input, textarea {
+  color: black;
 }
 
 main > *:nth-child(odd) {

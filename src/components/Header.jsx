@@ -45,7 +45,7 @@ function Header({ handleClick }) {
         alt="profile image"
         className="w-[180px] border-8 border-white/25 rounded-full mx-auto mb-6 md:w-[200px]"
       />
-      <div className="md:text-center mb-8">
+      <div className="text-center mb-8">
         <h1 className="mb-4">Will Delorm</h1>
         <h2 className="text-base">Your friendly neighborhood developer</h2>
       </div>
@@ -69,7 +69,7 @@ function Header({ handleClick }) {
           ))}
         </ul>
       </nav>
-      <ul className="flex space-x-6 md:justify-center">
+      <ul className="flex space-x-6 justify-center">
         {socialItems.map(({ icon, url }, index) => (
           <li key={index}>
             <a href={url}>{icon}</a>

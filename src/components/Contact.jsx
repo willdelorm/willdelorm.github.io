@@ -23,7 +23,7 @@ function Projects() {
         </div>
         <div className="max-w-[1200px] md:px-[96px] mx-auto">
           <form
-            className="md:p-8 space-y-4 md:flex flex-col md:shadow-md md:rounded-lg"
+            className="md:p-8 space-y-4 md:flex flex-col"
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="md:flex md:space-x-4">
