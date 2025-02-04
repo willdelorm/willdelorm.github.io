@@ -7,7 +7,31 @@ function Projects() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  // TODO: Update Web3Forms code to match docs for React Hook Form
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (data) => {
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    console.log(formData)
+
+    formData.append("access_key", "fc07073a-47ef-49e3-96c1-7f029a003ee5");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const res = await response.json();
+
+    if (res.success) {
+      setResult("Form Submitted Successfully");
+      reset();
+    } else {
+      console.log("Error", res);
+      setResult(res.message);
+    }
+  };
 
   return (
     <section id="contact" className="w-full px-10 py-16 md:py-32">
