@@ -10,10 +10,10 @@ function Projects() {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <section id="contact" className="relative w-full px-10 py-32">
-      <div className="mb-10 space-y-20">
-        <div className="space-y-3">
-          <h2 className="text-4xl font-medium">Contact</h2>
+    <section id="contact" className="w-full px-10 py-16 md:py-32">
+      <div className="mb-10">
+        <div className="space-y-3 mb-10">
+          <h2>Contact</h2>
           <hr className="w-16 border-0 border-t-2" />
           <p>
             Whether you're interested in coffee or a new project, I'd love to
@@ -21,13 +21,13 @@ function Projects() {
           </p>
           <p className="text-sm italic">* indicates required field</p>
         </div>
-        <div className="max-w-[1200px] px-[96px] mx-auto">
+        <div className="max-w-[1200px] md:px-[96px] mx-auto">
           <form
-            className="p-8 space-y-6 flex flex-col shadow-md rounded-lg"
+            className="md:p-8 space-y-4 md:flex flex-col md:shadow-md md:rounded-lg"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <div className="flex space-x-4">
-              <div className="flex-1">
+            <div className="md:flex md:space-x-4">
+              <div className="flex-1 mb-4 md:mb-0">
                 <label className="block font-medium mb-1" htmlFor="name">
                   Name*{" "}
                   {errors.name?.type === "required" && (
@@ -87,7 +87,7 @@ function Projects() {
               />
             </div>
             <button
-              className="px-6 py-3 mx-auto rounded-lg text-white font-medium"
+              className="px-6 py-3 mx-auto rounded-lg text-white font-bold"
               type="submit"
             >
               Submit message

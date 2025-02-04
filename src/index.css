@@ -7,13 +7,15 @@
   --clr-accent-lt: #f4fafd;
 
   font-family: Roboto, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
 }
 
 body {
   width: 100%;
   min-height: 100vh;
+  background-color: #071952;
+  color: #EBF4F6;
 }
 
 a:hover {
@@ -29,10 +31,31 @@ button {
   color: white;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 hr {
   border-color: var(--clr-accent);
 }
 
-main > *:nth-child(even) {
-  background: var(--clr-accent-lt);
+main > *:nth-child(odd) {
+  background-color: rgb(255 255 255 / .1);
+}
+
+.dev-tag {
+  background-color: #00505c;
+  color: #3cccda;
 }

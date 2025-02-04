@@ -39,33 +39,37 @@ function Header({ handleClick }) {
   ];
 
   return (
-    <header className="-left-full xl:left-0 fixed w-[300px] h-screen px-4 py-6 bg-gray-800 text-gray-100 z-10">
+    <header className="px-10 py-10 md:left-0 md:fixed md:w-[300px] md:h-screen md:px-4">
       <img
         src={ProfileImage}
         alt="profile image"
-        className="w-[200px] mx-auto mb-6 border-8 border-white/25 rounded-full"
+        className="w-[180px] border-8 border-white/25 rounded-full mx-auto mb-6 md:w-[200px]"
       />
-      <h1 className="text-5xl font-medium text-center mb-4">Will Delorm</h1>
-      <h2 className="text-center mb-8">Your friendly neighborhood developer</h2>
-      <ul className="text-xl mx-6 mb-8">
-        {navItems.map(({ title, url }, index) => (
-          <li key={index} className="mb-3">
-            <a
-              href={url}
-              className="flex items-center space-x-4"
-              onClick={() => {
-                if (window.innerWidth < 1280) {
-                  handleClick();
-                }
-              }}
-            >
-              <CaretCircleDoubleRight size={24} />
-              <span>{title}</span>
-            </a>
-          </li>
-        ))}
-      </ul>
-      <ul className="flex justify-center space-x-8">
+      <div className="md:text-center mb-8">
+        <h1 className="mb-4">Will Delorm</h1>
+        <h2 className="text-base">Your friendly neighborhood developer</h2>
+      </div>
+      <nav>
+        <ul className="hidden md:block text-xl mx-6 mb-8">
+          {navItems.map(({ title, url }, index) => (
+            <li key={index} className="mb-3">
+              <a
+                href={url}
+                className="flex items-center space-x-4"
+                onClick={() => {
+                  if (window.innerWidth < 1280) {
+                    handleClick();
+                  }
+                }}
+              >
+                <CaretCircleDoubleRight size={24} />
+                <span>{title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <ul className="flex space-x-6 md:justify-center">
         {socialItems.map(({ icon, url }, index) => (
           <li key={index}>
             <a href={url}>{icon}</a>
