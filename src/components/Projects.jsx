@@ -1,6 +1,5 @@
 import queerEugene from "../assets/queereugene.png";
 import designationDK from "../assets/designationDK.png";
-import betabox from "../assets/betabox.png";
 import clearscore from "../assets/clearscore.png";
 
 function Projects() {
@@ -20,14 +19,6 @@ function Projects() {
       description:
         "Small architecture firm in New York City. I built their landing page using SquareSpace and custom CSS.",
       devItems: ["SquareSpace", "CSS"],
-    },
-    {
-      title: "BetaBox",
-      link: "https://github.com/willdelorm/betabox",
-      image: betabox,
-      description:
-        "Climbing tracker web app that allows users to log their climbing sessions and track their progress. This personal project was built using React and Bootstrap.",
-      devItems: ["React", "Bootstrap", "Vite"],
     },
     {
       title: "ClearScore",
