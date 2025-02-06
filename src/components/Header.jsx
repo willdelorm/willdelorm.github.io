@@ -43,7 +43,7 @@ function Header({ handleClick }) {
       <img
         src={ProfileImage}
         alt="profile image"
-        className="w-[150px] border-8 border-white/25 rounded-full mx-auto mb-6 lg:w-[200px]"
+        className="w-[150px] border-8 border-white/25 rounded-full mx-auto mb-6 xl:w-[200px]"
       />
       <div className="text-center mb-8">
         <h1>Will Delorm</h1>

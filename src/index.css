@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 :root {
+  --clr-primary: #071952;
+  --clr-on-primary: #EBF4F6;
   --clr-accent: #3cccda;
+  --clr-accent-drk: #00505c;
+
 
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 14px;
@@ -13,8 +17,8 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: #071952;
-  color: #EBF4F6;
+  background-color: var(--clr-primary);
+  color: var(--clr-on-primary);
 }
 
 a:hover {
@@ -23,11 +27,6 @@ a:hover {
 
 button {
   background: var(--clr-accent);
-}
-
-.menuIcon {
-  background-color: var(--clr-accent);
-  color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,20 +58,24 @@ main > *:nth-child(odd) {
 }
 
 .dev-tag {
-  background-color: #00505c;
-  color: #3cccda;
+  background-color: var(--clr-accent-drk);
+  color: var(--clr-accent);
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+
   h1 {
-    font-size: 3.5rem;
+    font-size: 2.75rem;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }

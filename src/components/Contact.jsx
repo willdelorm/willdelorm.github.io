@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useForm, useWatch } from "react-hook-form";
 
-const WEB3_ACCESS_KEY = "fc07073a-47ef-49e3-96c1-7f029a003ee5"
+const WEB3_ACCESS_KEY = "fc07073a-47ef-49e3-96c1-7f029a003ee5";
 
 function Projects() {
   const {
@@ -20,11 +20,11 @@ function Projects() {
   const userName = useWatch({
     control,
     name: "name",
-    defaultValue: "Someone"
+    defaultValue: "Someone",
   });
 
   useEffect(() => {
-    setValue('subject', `${userName} sent a message from your portfolio site!`)
+    setValue("subject", `${userName} sent a message from your portfolio site!`);
   }, [userName, setValue]);
 
   const onSubmit = async (data, e) => {
@@ -57,9 +57,9 @@ function Projects() {
   };
 
   return (
-    <section id="contact" className="w-full px-10 py-16 lg:py-32">
-      <div className="mb-10">
-        <div className="mb-10">
+    <section id="contact" className="w-full px-10 py-20 xl:px-20 xl:py-32">
+      <div className="max-w-[1000px] space-y-4">
+        <div>
           <h2>Contact</h2>
           <hr className="w-16 border-0 border-t-2 mb-4" />
           <p>
@@ -68,7 +68,7 @@ function Projects() {
           </p>
           <p className="text-sm italic">* indicates required field</p>
         </div>
-        <div className="max-w-[1200px] lg:px-[96px] mx-auto">
+        <div className="max-w-[1000px] xl:px-[96px] mx-auto">
           {!isSubmitSuccessful && (
             <form
               className="lg:p-8 space-y-4 lg:flex flex-col"
@@ -79,10 +79,7 @@ function Projects() {
                 value={WEB3_ACCESS_KEY}
                 {...register("access_key")}
               />
-              <input
-                type="hidden"
-                {...register("subject")}
-              />
+              <input type="hidden" {...register("subject")} />
               <input
                 type="hidden"
                 value="Portfolio HQ"
@@ -93,38 +90,37 @@ function Projects() {
                 id=""
                 className="hidden"
                 style={{ display: "none" }}
-                {...register("botcheck")} />
-              <div className="lg:flex lg:space-x-4">
-                <div className="flex-1 mb-4 lg:mb-0">
-                  <label className="block font-medium mb-1" htmlFor="name">
-                    Name*{" "}
-                    {errors.name?.type === "required" && (
-                      <span className="text-red-500">Required</span>
-                    )}
-                  </label>
-                  <input
-                    className="w-full border border-black px-2 py-1"
-                    placeholder="e.g. Jane Doe"
-                    {...register("name", { required: true })}
-                    aria-invalid={errors.name ? "true" : "false"}
-                    maxLength={50}
-                  />
-                </div>
-                <div className="flex-1">
-                  <label className="block font-medium mb-1" htmlFor="email">
-                    Email*{" "}
-                    {errors.email?.type === "required" && (
-                      <span className="text-red-500">Required</span>
-                    )}
-                  </label>
-                  <input
-                    className="w-full border border-black px-2 py-1"
-                    placeholder="e.g. jane.doe@gmail.com"
-                    {...register("email", { required: true })}
-                    aria-invalid={errors.email ? "true" : "false"}
-                    maxLength={320}
-                  />
-                </div>
+                {...register("botcheck")}
+              />
+              <div className="flex-1 mb-4 lg:mb-0">
+                <label className="block font-medium mb-1" htmlFor="name">
+                  Name*{" "}
+                  {errors.name?.type === "required" && (
+                    <span className="text-red-500">Required</span>
+                  )}
+                </label>
+                <input
+                  className="w-full border border-black px-2 py-1"
+                  placeholder="e.g. Jane Doe"
+                  {...register("name", { required: true })}
+                  aria-invalid={errors.name ? "true" : "false"}
+                  maxLength={50}
+                />
+              </div>
+              <div className="flex-1">
+                <label className="block font-medium mb-1" htmlFor="email">
+                  Email*{" "}
+                  {errors.email?.type === "required" && (
+                    <span className="text-red-500">Required</span>
+                  )}
+                </label>
+                <input
+                  className="w-full border border-black px-2 py-1"
+                  placeholder="e.g. jane.doe@gmail.com"
+                  {...register("email", { required: true })}
+                  aria-invalid={errors.email ? "true" : "false"}
+                  maxLength={320}
+                />
               </div>
               <div>
                 <label className="block font-medium mb-1" htmlFor="message">
@@ -151,18 +147,21 @@ function Projects() {
                     className="w-5 h-5 mx-auto text-white animate-spin"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
-                    viewBox="0 0 24 24">
+                    viewBox="0 0 24 24"
+                  >
                     <circle
                       className="opacity-25"
                       cx="12"
                       cy="12"
                       r="10"
                       stroke="currentColor"
-                      strokeWidth="4"></circle>
+                      strokeWidth="4"
+                    ></circle>
                     <path
                       className="opacity-75"
                       fill="currentColor"
-                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
                   </svg>
                 ) : (
                   "Send Message"
@@ -180,7 +179,8 @@ function Projects() {
                   className="text-green-300"
                   viewBox="0 0 100 100"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     d="M26.6666 50L46.6666 66.6667L73.3333 33.3333M50 96.6667C43.8716 96.6667 37.8033 95.4596 32.1414 93.1144C26.4796 90.7692 21.3351 87.3317 17.0017 82.9983C12.6683 78.6649 9.23082 73.5204 6.8856 67.8586C4.54038 62.1967 3.33331 56.1283 3.33331 50C3.33331 43.8716 4.54038 37.8033 6.8856 32.1414C9.23082 26.4796 12.6683 21.3351 17.0017 17.0017C21.3351 12.6683 26.4796 9.23084 32.1414 6.88562C37.8033 4.5404 43.8716 3.33333 50 3.33333C62.3767 3.33333 74.2466 8.24998 82.9983 17.0017C91.75 25.7534 96.6666 37.6232 96.6666 50C96.6666 62.3768 91.75 74.2466 82.9983 82.9983C74.2466 91.75 62.3767 96.6667 50 96.6667Z"
                     stroke="currentColor"
@@ -191,7 +191,8 @@ function Projects() {
                 <p className="lg:px-3 mb-3">{Message}</p>
                 <button
                   className="px-6 py-3 mx-auto rounded-lg text-white font-bold"
-                  onClick={() => reset()}>
+                  onClick={() => reset()}
+                >
                   Go back
                 </button>
               </div>
@@ -206,7 +207,8 @@ function Projects() {
                 viewBox="0 0 97 97"
                 className="text-red-400"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M27.9995 69C43.6205 53.379 52.3786 44.621 67.9995 29M26.8077 29L67.9995 69M48.2189 95C42.0906 95 36.0222 93.7929 30.3604 91.4477C24.6985 89.1025 19.554 85.6651 15.2206 81.3316C10.8872 76.9982 7.44975 71.8538 5.10454 66.1919C2.75932 60.53 1.55225 54.4617 1.55225 48.3333C1.55225 42.205 2.75932 36.1366 5.10454 30.4748C7.44975 24.8129 10.8872 19.6684 15.2206 15.335C19.554 11.0016 24.6985 7.56418 30.3604 5.21896C36.0222 2.87374 42.0906 1.66667 48.2189 1.66667C60.5957 1.66667 72.4655 6.58333 81.2172 15.335C89.9689 24.0867 94.8856 35.9566 94.8856 48.3333C94.8856 60.7101 89.9689 72.58 81.2172 81.3316C72.4655 90.0833 60.5957 95 48.2189 95Z"
                   stroke="CurrentColor"
@@ -218,7 +220,10 @@ function Projects() {
                 Oops, Something went wrong!
               </h3>
               <p className="text-gray-300 mb-3 lg:px-3">{Message}</p>
-              <button className="px-6 py-3 mx-auto rounded-lg text-white font-bold" onClick={() => reset()}>
+              <button
+                className="px-6 py-3 mx-auto rounded-lg text-white font-bold"
+                onClick={() => reset()}
+              >
                 Try Again
               </button>
             </div>
