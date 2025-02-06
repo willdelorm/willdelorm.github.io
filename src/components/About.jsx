@@ -6,10 +6,10 @@ When I’m not building sleek user interfaces, you’ll find me climbing, hiking
 
 function About() {
   return (
-    <section id="about" className="w-full px-10 py-16 md:px-20 md:py-32">
+    <section id="about" className="w-full px-10 py-16 lg:px-20 lg:py-32">
       <div className="max-w-[1000px] mb-10 space-y-4">
         <div>
-          <h2 className="md:text-4xl">About</h2>
+          <h2 className="lg:text-4xl">About</h2>
           <hr className="w-16 border-0 border-t-2" />
         </div>
         {aboutText.split("\n").map((text, index) => (<p key={index}>{text}</p>))}

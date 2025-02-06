@@ -57,7 +57,7 @@ function Projects() {
   };
 
   return (
-    <section id="contact" className="w-full px-10 py-16 md:py-32">
+    <section id="contact" className="w-full px-10 py-16 lg:py-32">
       <div className="mb-10">
         <div className="space-y-3 mb-10">
           <h2>Contact</h2>
@@ -68,10 +68,10 @@ function Projects() {
           </p>
           <p className="text-sm italic">* indicates required field</p>
         </div>
-        <div className="max-w-[1200px] md:px-[96px] mx-auto">
+        <div className="max-w-[1200px] lg:px-[96px] mx-auto">
           {!isSubmitSuccessful && (
             <form
-              className="md:p-8 space-y-4 md:flex flex-col"
+              className="lg:p-8 space-y-4 lg:flex flex-col"
               onSubmit={handleSubmit(onSubmit)}
             >
               <input
@@ -94,8 +94,8 @@ function Projects() {
                 className="hidden"
                 style={{ display: "none" }}
                 {...register("botcheck")} />
-              <div className="md:flex md:space-x-4">
-                <div className="flex-1 mb-4 md:mb-0">
+              <div className="lg:flex lg:space-x-4">
+                <div className="flex-1 mb-4 lg:mb-0">
                   <label className="block font-medium mb-1" htmlFor="name">
                     Name*{" "}
                     {errors.name?.type === "required" && (
@@ -188,7 +188,7 @@ function Projects() {
                   />
                 </svg>
                 <h3 className="py-5 text-2xl text-green-500">Success</h3>
-                <p className="md:px-3 mb-3">{Message}</p>
+                <p className="lg:px-3 mb-3">{Message}</p>
                 <button
                   className="px-6 py-3 mx-auto rounded-lg text-white font-bold"
                   onClick={() => reset()}>
@@ -217,7 +217,7 @@ function Projects() {
               <h3 className="text-2xl text-red-400 py-7">
                 Oops, Something went wrong!
               </h3>
-              <p className="text-gray-300 mb-3 md:px-3">{Message}</p>
+              <p className="text-gray-300 mb-3 lg:px-3">{Message}</p>
               <button className="px-6 py-3 mx-auto rounded-lg text-white font-bold" onClick={() => reset()}>
                 Try Again
               </button>

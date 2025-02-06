@@ -39,18 +39,18 @@ function Header({ handleClick }) {
   ];
 
   return (
-    <header className="px-10 py-10 md:left-0 md:fixed md:w-[300px] md:h-screen md:px-4">
+    <header className="px-10 py-10 lg:left-0 lg:fixed lg:w-[300px] lg:h-screen lg:px-4">
       <img
         src={ProfileImage}
         alt="profile image"
-        className="w-[150px] border-8 border-white/25 rounded-full mx-auto mb-6 md:w-[200px]"
+        className="w-[150px] border-8 border-white/25 rounded-full mx-auto mb-6 lg:w-[200px]"
       />
       <div className="text-center mb-8">
         <h1>Will Delorm</h1>
         <h2 className="text-base">Your friendly neighborhood developer</h2>
       </div>
       <nav>
-        <ul className="hidden md:block text-xl mx-6 mb-8">
+        <ul className="hidden lg:block text-xl mx-6 mb-8">
           {navItems.map(({ title, url }, index) => (
             <li key={index} className="mb-3">
               <a
