@@ -43,10 +43,10 @@ function Header({ handleClick }) {
       <img
         src={ProfileImage}
         alt="profile image"
-        className="w-[180px] border-8 border-white/25 rounded-full mx-auto mb-6 md:w-[200px]"
+        className="w-[150px] border-8 border-white/25 rounded-full mx-auto mb-6 md:w-[200px]"
       />
       <div className="text-center mb-8">
-        <h1 className="mb-4">Will Delorm</h1>
+        <h1>Will Delorm</h1>
         <h2 className="text-base">Your friendly neighborhood developer</h2>
       </div>
       <nav>

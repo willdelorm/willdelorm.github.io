@@ -34,15 +34,15 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="w-full px-10 py-16 mx-auto md:py-32"
+      className="w-full px-10 py-16 mx-auto md:py-32 space-y-4"
     >
-        <div className="space-y-3 mb-20">
+        <div>
           <h2 className="md:text-4xl">Projects</h2>
           <hr className="w-16 border-0 border-t-2" />
         </div>
         <div className="md:px-[120px] space-y-16">
           {projects.map((project, idx) => (
-            <a key={idx} href={project.link} className="flex flex-col md:flex-row">
+            <a key={idx} href={project.link} target="_blank" className="flex flex-col md:flex-row">
               <div className="mb-6 md:mr-6">
                 <img src={project.image} className="w-full md:w-[300px]" alt="profile image" />
               </div>
