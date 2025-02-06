@@ -59,9 +59,9 @@ function Projects() {
   return (
     <section id="contact" className="w-full px-10 py-16 lg:py-32">
       <div className="mb-10">
-        <div className="space-y-3 mb-10">
+        <div className="mb-10">
           <h2>Contact</h2>
-          <hr className="w-16 border-0 border-t-2" />
+          <hr className="w-16 border-0 border-t-2 mb-4" />
           <p>
             Whether you're interested in coffee or a new project, I'd love to
             hear from you!
