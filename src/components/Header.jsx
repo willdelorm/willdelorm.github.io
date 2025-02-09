@@ -7,7 +7,7 @@ import {
 } from "@phosphor-icons/react";
 import ProfileImage from "../assets/profile.jpg";
 
-function Header({ handleClick }) {
+function Header() {
   const navItems = [
     {
       title: "About",
@@ -56,11 +56,6 @@ function Header({ handleClick }) {
               <a
                 href={url}
                 className="flex items-center space-x-4"
-                onClick={() => {
-                  if (window.innerWidth < 1280) {
-                    handleClick();
-                  }
-                }}
               >
                 <CaretCircleDoubleRight size={24} />
                 <span>{title}</span>
