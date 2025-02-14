@@ -7,7 +7,7 @@ function Projects() {
   const projects = [
     {
       title: "Queer Eugene",
-      link: "https://queereugene.org",
+      link: "https://github.com/willdelorm/queer-eugene-2024",
       image: queerEugene,
       description:
         "Non-profit LGBTQ+ organization in Eugene, Oregon. I was responsible for the front-end design and development of the website. The website was built using Next.js and Tailwind CSS.",
