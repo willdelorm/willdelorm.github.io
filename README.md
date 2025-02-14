@@ -1,0 +1,2 @@
+- [ ] Reduce image files
+- [ ] Write up README

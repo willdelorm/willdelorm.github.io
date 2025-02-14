@@ -34,7 +34,7 @@ function Header() {
     },
     {
       icon: <PaperPlaneTilt size={32} />,
-      url: "mailto:willdelorm@gmail.com",
+      url: "mailto:will@willdelorm.com",
     },
   ];
 
