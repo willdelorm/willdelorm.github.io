@@ -2,6 +2,8 @@ import queerEugene from "../assets/queereugene.png";
 import designationDK from "../assets/designationDK.png";
 import clearscore from "../assets/clearscore.png";
 import { ArrowUpRight } from "@phosphor-icons/react";
+import { motion } from "motion/react";
+import { motionParent, motionChild } from "../utils/motion.utils";
 
 function Projects() {
   const projects = [
@@ -32,24 +34,43 @@ function Projects() {
   ];
 
   return (
-    <section
-      id="projects"
-      className="w-full px-10 py-20 xl:px-20 xl:py-32"
-    >
-      <div className="max-w-[1000px] space-y-4">
-        <div>
+    <section id="projects" className="w-full px-10 py-20 xl:px-20 xl:py-32">
+      <motion.div
+        className="max-w-[1000px] space-y-4"
+        variants={motionParent}
+        initial="hidden"
+        whileInView="fadeUp"
+        viewport={{ once: true }}
+      >
+        <motion.div variants={motionChild}>
           <h2>Projects</h2>
           <hr className="w-16 border-0 border-t-2" />
-        </div>
-        <ul className="space-y-16">
+        </motion.div>
+        <motion.ul className="space-y-16" variants={motionParent}
+        initial="hidden"
+        whileInView="fadeUp"
+        viewport={{ once: true }}>
           {projects.map((project, idx) => (
-            <li key={idx}>
-              <a href={project.link} target="_blank" className="flex flex-col lg:flex-row">
+            <motion.li variants={motionChild} key={idx}>
+              <a
+                href={project.link}
+                target="_blank"
+                className="flex flex-col lg:flex-row"
+              >
                 <div className="mb-6 lg:mr-6">
-                  <img src={project.image} className="w-full lg:w-[300px]" alt="screenshot of project" />
+                  <img
+                    src={project.image}
+                    className="w-full lg:w-[300px]"
+                    alt="screenshot of project"
+                  />
                 </div>
                 <div className="lg:flex-1">
-                  <h3 className="mb-3">{project.title} <span className="inline-block"><ArrowUpRight size={20} /></span></h3>
+                  <h3 className="mb-3">
+                    {project.title}{" "}
+                    <span className="inline-block">
+                      <ArrowUpRight size={20} />
+                    </span>
+                  </h3>
                   <p className="mb-6">{project.description}</p>
                   <div className="flex flex-wrap gap-3">
                     {project.devItems.map((item) => (
@@ -60,10 +81,10 @@ function Projects() {
                   </div>
                 </div>
               </a>
-            </li>
+            </motion.li>
           ))}
-        </ul>
-      </div>
+        </motion.ul>
+      </motion.div>
     </section>
   );
 }
