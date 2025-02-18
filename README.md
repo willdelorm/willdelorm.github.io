@@ -1,10 +1,20 @@
-# Will Delorm's GitHub Pages
+# Will Delorm's Portfolio
 
-Welcome to the repository for Will Delorm's personal website hosted on GitHub Pages.
+Welcome to the staging ground for Will Delorm's personal website.
 
 ## Project Overview
 
 This project is a personal website to showcase my portfolio and other personal projects. It is built using React and TailwindCSS.
+
+![portfolio screenshot](./src/assets/portfolio-screenshot.png)
+
+## Tech Stack
+
+- [Vite](https://vite.dev/)
+- [React](https://react.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Motion](https://motion.dev/)
+- [Vitest](https://vitest.dev/)
 
 ## Getting Started
 
@@ -31,10 +41,6 @@ Make sure you have the following installed:
 ## Usage
 
 Feel free to explore the website and check out the different sections. If you find any issues or have suggestions, please open an issue on the repository.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
 ## License
 
