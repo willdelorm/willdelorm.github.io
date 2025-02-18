@@ -1,5 +1,5 @@
 import queerEugene from "../assets/queereugene.png";
-import designationDK from "../assets/designationDK.png";
+import designationDK from "../assets/designationdk.png";
 import clearscore from "../assets/clearscore.png";
 import { ArrowUpRight } from "@phosphor-icons/react";
 import { motion } from "motion/react";
