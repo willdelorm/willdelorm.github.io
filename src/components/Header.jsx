@@ -7,7 +7,7 @@ import {
 } from "@phosphor-icons/react";
 import ProfileImage from "../assets/profile.jpg";
 import { motion } from "motion/react";
-import { motionParent, motionChild } from "../utils/motion.utils";
+import { fadeRight, parentHeader } from "../utils/motion.utils";
 
 function Header() {
   const navItems = [
@@ -43,22 +43,22 @@ function Header() {
   return (
     <motion.header
       className="px-10 py-10 lg:left-0 lg:fixed lg:w-[300px] lg:h-screen lg:px-4"
-      variants={motionParent}
+      variants={parentHeader}
       initial="hidden"
-      whileInView="fadeUp"
+      whileInView="show"
       viewport={{once: true}}
     >
       <motion.img
         src={ProfileImage}
         alt="profile image"
         className="w-[150px] border-8 border-white/25 rounded-full mx-auto mb-6 xl:w-[200px]"
-        variants={motionChild}
+        variants={fadeRight}
       />
-      <motion.div className="text-center mb-8" variants={motionChild}>
+      <motion.div className="text-center mb-8" variants={fadeRight}>
         <h1>Will Delorm</h1>
         <h2 className="text-base">Your friendly neighborhood developer</h2>
       </motion.div>
-      <motion.nav variants={motionChild}>
+      <motion.nav variants={fadeRight}>
         <ul className="hidden lg:block text-xl mx-6 mb-8">
           {navItems.map(({ title, url }, index) => (
             <li key={index} className="mb-3">
@@ -70,7 +70,7 @@ function Header() {
           ))}
         </ul>
       </motion.nav>
-      <motion.ul className="flex space-x-6 justify-center" variants={motionChild}>
+      <motion.ul className="flex space-x-6 justify-center" variants={fadeRight}>
         {socialItems.map(({ icon, url }, index) => (
           <li key={index}>
             <a href={url}>{icon}</a>

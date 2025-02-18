@@ -3,7 +3,7 @@ import designationDK from "../assets/designationDK.png";
 import clearscore from "../assets/clearscore.png";
 import { ArrowUpRight } from "@phosphor-icons/react";
 import { motion } from "motion/react";
-import { motionParent, motionChild } from "../utils/motion.utils";
+import { parentBasic, fadeUp } from "../utils/motion.utils";
 
 function Projects() {
   const projects = [
@@ -37,21 +37,21 @@ function Projects() {
     <section id="projects" className="w-full px-10 py-20 xl:px-20 xl:py-32">
       <motion.div
         className="max-w-[1000px] space-y-4"
-        variants={motionParent}
+        variants={parentBasic}
         initial="hidden"
-        whileInView="fadeUp"
+        whileInView="show"
         viewport={{ once: true }}
       >
-        <motion.div variants={motionChild}>
+        <motion.div variants={fadeUp}>
           <h2>Projects</h2>
           <hr className="w-16 border-0 border-t-2" />
         </motion.div>
-        <motion.ul className="space-y-16" variants={motionParent}
+        <motion.ul className="space-y-16" variants={parentBasic}
         initial="hidden"
-        whileInView="fadeUp"
+        whileInView="show"
         viewport={{ once: true }}>
           {projects.map((project, idx) => (
-            <motion.li variants={motionChild} key={idx}>
+            <motion.li variants={fadeUp} key={idx}>
               <a
                 href={project.link}
                 target="_blank"

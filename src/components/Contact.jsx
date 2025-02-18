@@ -1,19 +1,19 @@
 import ContactForm from "../ui/ContactForm";
 import { motion } from "motion/react";
-import { motionParent, motionChild } from "../utils/motion.utils";
+import { parentBasic, fadeUp } from "../utils/motion.utils";
 
 function Contact() {
   return (
     <motion.section
       id="contact"
       className="w-full px-10 py-20 xl:px-20 xl:py-32"
-      variants={motionParent}
+      variants={parentBasic}
       initial="hidden"
-      whileInView="fadeUp"
+      whileInView="show"
       viewport={{once: true}}
     >
       <div className="max-w-[1000px] space-y-4">
-        <motion.div variants={ motionChild }>
+        <motion.div variants={ fadeUp }>
           <h2>Contact</h2>
           <hr className="w-16 border-0 border-t-2 mb-4" />
           <p>
@@ -23,7 +23,7 @@ function Contact() {
           <p className="text-sm italic">* indicates required field</p>
         </motion.div>
         <motion.div
-          variants={ motionChild }
+          variants={ fadeUp }
           className="max-w-[1000px] xl:px-[96px] mx-auto"
         >
           <ContactForm />
