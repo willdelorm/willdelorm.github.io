@@ -1,2 +1,3 @@
 - [ ] Reduce image files
 - [ ] Write up README
+- [ ] Fine tune animations
